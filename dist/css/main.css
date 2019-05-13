@@ -20,7 +20,7 @@ body {
 
 #overlay {
   margin-top: 350px;
-  margin-left: 60px;
+  margin-left: 45px;
   position: fixed;
 }
 
@@ -33,6 +33,7 @@ body {
 .fas {
   margin-left: 0;
   color: #214365;
+  opacity: 0.90;
 }
 
 .big-icon {
@@ -54,8 +55,13 @@ body {
   transform: translateY(-3px);
 }
 
+img {
+  width: 70px;
+  margin-top: 40%;
+  position: fixed;
+}
+
 .hand {
-  width: 60%;
   position: absolute;
   top: 50%;
   transform-origin: 100%;
@@ -64,16 +70,19 @@ body {
 }
 
 .hour-hand {
+  width: 70%;
   background: black;
   height: 6px;
 }
 
 .min-hand {
+  width: 60%;
   background: black;
   height: 6px;
 }
 
 .second-hand {
+  width: 65%;
   background: #2b1d0e;
   height: 3px;
 }
