@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/demoncowgirl/js-clock#readme",
   "devDependencies": {
+    "express": "^4.16.4",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2"
   }
