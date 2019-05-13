@@ -8,24 +8,42 @@ body {
 
 .container-fluid { max-width: 1200px; }
 
-
 .fas {
   color: #fff;
 }
 
 .big-icon {
-  margin-top: 0px;
-  font-size: 550px;
+  font-size: 650px;
+  /* position: absolute; */
+  z-index: 1;
+}
+
+.clock {
+  /* position: absolute; */
+  z-index: 2;
 }
 
 .hand {
+  length: 25%;
   width: 50%;
-  height: 6px;
-  background: #fff;
   position: absolute;
   top: 50%;
   transform-origin: 100%;
   transform: rotate(90deg);
-  transition: all 0.5s;
   transition-timing-function: ease-in-out;
+}
+
+.hour-hand {
+  background: black;
+  height: 6px;
+}
+
+.min-hand {
+  background: black;
+  height: 6px;
+}
+
+.second-hand {
+  background: orange;
+  height: 3px;
 }
