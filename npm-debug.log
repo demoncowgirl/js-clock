@@ -1,0 +1,60 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 verbose config Skipping project config: /home/beth/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly install normalizeTree
+9 silly loadCurrentTree Finishing
+10 silly loadIdealTree Starting
+11 silly install loadIdealTree
+12 silly cloneCurrentTree Starting
+13 silly install cloneCurrentTreeToIdealTree
+14 silly cloneCurrentTree Finishing
+15 silly loadShrinkwrap Starting
+16 silly install loadShrinkwrap
+17 silly loadShrinkwrap Finishing
+18 silly loadAllDepsIntoIdealTree Starting
+19 silly install loadAllDepsIntoIdealTree
+20 silly loadAllDepsIntoIdealTree Finishing
+21 silly idealTree:prePrune beth
+21 silly idealTree:prePrune └── nvm@0.0.4
+22 silly loadIdealTree Finishing
+23 silly currentTree beth
+23 silly currentTree └── nvm@0.0.4
+24 silly idealTree beth
+24 silly idealTree └── nvm@0.0.4
+25 silly generateActionsToTake Starting
+26 silly install generateActionsToTake
+27 warn checkPermissions Missing write access to /home/beth/node_modules/nvm
+28 warn checkPermissions Missing write access to /home/beth/node_modules
+29 silly rollbackFailedOptional Starting
+30 silly rollbackFailedOptional Finishing
+31 silly runTopLevelLifecycles Starting
+32 silly runTopLevelLifecycles Finishing
+33 silly install printInstalled
+34 warn enoent ENOENT: no such file or directory, open '/home/beth/package.json'
+35 warn beth No description
+36 warn beth No repository field.
+37 warn beth No README data
+38 warn beth No license field.
+39 verbose stack Error: EACCES: permission denied, access '/home/beth/node_modules/nvm'
+40 verbose cwd /home/beth/repos/js-clock
+41 error Linux 4.18.0-18-generic
+42 error argv "/usr/bin/node" "/usr/bin/npm" "install"
+43 error node v8.10.0
+44 error npm  v3.5.2
+45 error path /home/beth/node_modules/nvm
+46 error code EACCES
+47 error errno -13
+48 error syscall access
+49 error Error: EACCES: permission denied, access '/home/beth/node_modules/nvm'
+49 error  { Error: EACCES: permission denied, access '/home/beth/node_modules/nvm'
+49 error   errno: -13,
+49 error   code: 'EACCES',
+49 error   syscall: 'access',
+49 error   path: '/home/beth/node_modules/nvm' }
+50 error Please try running this command again as root/Administrator.
+51 verbose exit [ -13, true ]

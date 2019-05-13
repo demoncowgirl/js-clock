@@ -19,7 +19,7 @@ gulp.task('copycss', function() {
 });
 
 gulp.task('copyjs', function() {
-	return gulp.src('app/*.js')
+	return gulp.src('app/js/*.js')
 		.pipe(gulp.dest('dist/'))
 });
 
@@ -32,6 +32,7 @@ gulp.task('sass', function() {
 
 gulp.task('watch', function() {
 	gulp.watch('app/*.+(htm|html)', gulp.series('copyhtml'));
+  gulp.watch('app/**/*.js', gulp.series('copyjs'));
   gulp.watch('app/**/*.css', gulp.series('copycss'));
   gulp.watch('app/**/*.scss', gulp.series('sass'));
   gulp.watch('app/**/*.+(jpg|jpeg|png|gif)', gulp.series('copyimages'));
