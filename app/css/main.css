@@ -1,6 +1,8 @@
 
 body {
   margin: 0;
+  width: 100%;
+  display: flex;
   background-image: url('../images/coffee-beans.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -8,24 +10,52 @@ body {
 
 .container-fluid { max-width: 1200px; }
 
+.container {
+  margin-top: 20px;
+  text-align: center;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#overlay {
+  margin-top: 350px;
+  margin-left: 60px;
+  position: fixed;
+}
+
+#cup {
+  margin-top: 80px;
+  margin-left: 0;
+}
+
+
 .fas {
-  color: #fff;
+  margin-left: 0;
+  color: #214365;
 }
 
 .big-icon {
-  font-size: 650px;
-  /* position: absolute; */
+  font-size: 550px;
   z-index: 1;
 }
 
 .clock {
-  /* position: absolute; */
+  width: 250px;
+  height: 250px;
+  position: relative;
   z-index: 2;
 }
 
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px);
+}
+
 .hand {
-  length: 25%;
-  width: 50%;
+  width: 60%;
   position: absolute;
   top: 50%;
   transform-origin: 100%;
@@ -44,6 +74,6 @@ body {
 }
 
 .second-hand {
-  background: orange;
+  background: #2b1d0e;
   height: 3px;
 }
