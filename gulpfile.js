@@ -20,7 +20,7 @@ gulp.task('copycss', function() {
 
 gulp.task('copyjs', function() {
 	return gulp.src('app/js/*.js')
-		.pipe(gulp.dest('dist/'))
+		.pipe(gulp.dest('dist/js/'))
 });
 
 // function to change sass code to css
